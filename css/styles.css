@@ -1,10 +1,13 @@
 main {
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: minmax(auto, 350px) 1fr;
     column-gap: 10px;
 }
 
-
+hr {
+    border: 1px solid grey;
+    box-shadow: 10px;
+}
 
 .sidebar {
     background-color: aqua;
@@ -13,7 +16,7 @@ main {
     grid-template-columns: auto;
     align-content: start;
     justify-content: start;
-    padding: 20px 15px;
+    
 }
 
 .sidebar p {
@@ -63,4 +66,96 @@ h1 {
     grid-template-columns: 40px auto;
     align-items: center;
     column-gap: 5px;
+}
+
+.header {
+    padding: 0 2rem;
+}
+
+.header img {
+    width: 30px;
+    height: 30px;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: auto 3fr 1fr auto auto;
+    align-items: center;
+    gap: 10px;
+
+    & > img:last-of-type {
+        width: 40px;
+        height: 40px;
+        border: 2px solid hsla(308, 90%, 19%, 0.541);
+        border-radius: 50%;
+    }
+}
+
+.header-top input {
+    height: 30px;
+    background-color: aquamarine;
+    border: 2px solid white;
+    border-radius: 100vh;
+}
+
+.header-top button {
+    border: none;
+    justify-self: end;
+}
+
+.header-top p {
+    font: bold 1rem helvetica;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-img {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    align-items: center;
+    
+    & img {
+        width: 70px;
+        height: 70px;
+        border: 2px solid rgba(56, 8, 8, 0.418);
+        border-radius: 50%;
+    }
+
+    & div {
+        display: grid;
+        align-content: center;
+        row-gap: 5px;
+    }
+
+    & div > p:first-child {
+        font: bold 0.8rem helvetica;
+        margin: 0;
+    }
+
+    & div > p:last-child {
+        font: bold 1.4rem helvetica;
+        margin: 0;
+    }
+}
+
+.header-bottom > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    justify-content: end;
+    gap: 10px;
+}
+
+.header-bottom button {
+    background-color: aqua;
+    color: white;
+    border-radius: 100vw;
+    border: none;
+    height: 30px;
+    font: bold 1rem helvetica;
 }
