@@ -1,6 +1,6 @@
 main {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 350px 1fr;
     column-gap: 10px;
 }
 
@@ -10,7 +10,6 @@ main {
     background-color: aqua;
     display: grid;
     column-gap: 20px;
-    width: 300px;
     grid-template-columns: auto;
     align-content: start;
     justify-content: start;
