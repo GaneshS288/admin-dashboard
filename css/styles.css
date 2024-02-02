@@ -6,7 +6,6 @@ main {
 
 hr {
     border: 1px solid rgb(161, 151, 151);
-    
     width: 100%;
 }
 
@@ -102,6 +101,7 @@ h1 {
 .header-top button {
     border: none;
     justify-self: end;
+    background-color: white;
 }
 
 .header-top p {
@@ -166,6 +166,7 @@ h1 {
     grid-template-columns: 3fr minmax(200px, 1fr);
     column-gap: 1.2rem;
     background-color: aquamarine;
+    padding-bottom: 2rem;
 }
 
 .user-content > section:first-child {
@@ -247,3 +248,43 @@ article {
         line-height: 1rem;
     }
 }
+
+.trending {
+    padding-right: 1rem;
+}
+
+.trending > div {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    padding: 0 1rem;
+
+    & img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100vh;
+    }
+
+    & button {
+        border: none;
+    }
+
+    & > div {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+    }
+
+    & p:first-of-type {
+        font: bold 0.8rem helvetica;
+    }
+
+    & p {
+        font: 0.8rem helvetica;
+    }
+}
+
