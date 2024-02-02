@@ -207,7 +207,7 @@ article {
         padding: 0 1rem 0 0;
         align-content: space-around;
 
-        & div {
+        & div:last-child {
             justify-self: end;
         }
     }
@@ -223,3 +223,4 @@ article {
         font: 0.8rem helvetica;
     }
 }
+
